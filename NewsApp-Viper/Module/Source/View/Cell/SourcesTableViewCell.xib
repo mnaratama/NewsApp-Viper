@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="137" id="xYv-KW-y8H" customClass="SourcesTableViewCell" customModule="NewsApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="137"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xYv-KW-y8H" id="Wl4-50-mxK">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="137"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZs-kj-Zu1">
+                        <rect key="frame" x="16" y="8" width="382" height="121"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iYz-KR-aM3">
+                                <rect key="frame" x="10" y="59.666666666666671" width="362" height="43"/>
+                                <string key="text">Video released by the Raleigh Police Department shows the arrest of Darryl Williams, who was shocked three times with a Taser and later died. WRAL’s Chelsea</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ardaam" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ib3-ks-Ivr">
+                                <rect key="frame" x="10" y="9.9999999999999982" width="362" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQF-xc-w3g">
+                                <rect key="frame" x="10" y="34.333333333333336" width="362" height="13.333333333333336"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.23921568627450979" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="iYz-KR-aM3" secondAttribute="trailing" constant="10" id="2nh-6S-alY"/>
+                            <constraint firstItem="CQF-xc-w3g" firstAttribute="leading" secondItem="TZs-kj-Zu1" secondAttribute="leading" constant="10" id="5aP-XR-250"/>
+                            <constraint firstItem="iYz-KR-aM3" firstAttribute="top" secondItem="CQF-xc-w3g" secondAttribute="bottom" constant="12" id="GqQ-6P-ONG"/>
+                            <constraint firstAttribute="trailing" secondItem="CQF-xc-w3g" secondAttribute="trailing" constant="10" id="QxW-K8-4gh"/>
+                            <constraint firstItem="CQF-xc-w3g" firstAttribute="top" secondItem="ib3-ks-Ivr" secondAttribute="bottom" constant="5" id="Xh1-Sx-ZNM"/>
+                            <constraint firstAttribute="trailing" secondItem="ib3-ks-Ivr" secondAttribute="trailing" constant="10" id="Z3k-w5-l6T"/>
+                            <constraint firstItem="iYz-KR-aM3" firstAttribute="leading" secondItem="TZs-kj-Zu1" secondAttribute="leading" constant="10" id="bQ8-h2-uvK"/>
+                            <constraint firstItem="ib3-ks-Ivr" firstAttribute="leading" secondItem="TZs-kj-Zu1" secondAttribute="leading" constant="10" id="ewE-xo-oXP"/>
+                            <constraint firstItem="ib3-ks-Ivr" firstAttribute="top" secondItem="TZs-kj-Zu1" secondAttribute="top" constant="10" id="vtr-Nr-ziL"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="iYz-KR-aM3" secondAttribute="bottom" constant="10" id="z0a-dA-GkY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93359775739999995" green="0.93359775739999995" blue="0.93359775739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TZs-kj-Zu1" secondAttribute="bottom" constant="8" id="3EP-yB-yP4"/>
+                    <constraint firstItem="TZs-kj-Zu1" firstAttribute="leading" secondItem="Wl4-50-mxK" secondAttribute="leading" constant="16" id="ZXt-4P-ABY"/>
+                    <constraint firstAttribute="trailing" secondItem="TZs-kj-Zu1" secondAttribute="trailing" constant="16" id="hiX-Dw-Bee"/>
+                    <constraint firstItem="TZs-kj-Zu1" firstAttribute="top" secondItem="Wl4-50-mxK" secondAttribute="top" constant="8" id="nXW-XE-nIj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="XwA-qJ-WP0"/>
+            <connections>
+                <outlet property="categoryNewsLabel" destination="CQF-xc-w3g" id="Rk6-vq-ZEP"/>
+                <outlet property="descriptionNewsLabel" destination="iYz-KR-aM3" id="ypR-6x-nsG"/>
+                <outlet property="newsNameLabel" destination="ib3-ks-Ivr" id="lcN-cP-qQV"/>
+                <outlet property="newsView" destination="TZs-kj-Zu1" id="gwb-bq-r5M"/>
+            </connections>
+            <point key="canvasLocation" x="44.274809160305338" y="95.422535211267615"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
