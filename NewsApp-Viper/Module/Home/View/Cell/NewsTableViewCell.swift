@@ -30,12 +30,13 @@ class NewsTableViewCell: UITableViewCell {
     func setData(news: NewsModel) {
         newsView.layer.cornerRadius = 8.0
         newsView.dropShadow()
+        print(news.urlToImage)
         if news.urlToImage?.prefix(4) == "http" || news.urlToImage?.prefix(5) == "https"{
             guard let urlString = news.urlToImage?.replacingOccurrences(of: " ", with: "%20"), let url = URL(string: urlString) else { return }
             newsImageView.af_setImage(withURL: url)
             newsImageView.roundCorners(corners: [.topLeft, .bottomLeft], radius: 8.0)
         } else {
-            newsImageView.af_setImage(withURL: URL(string: "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg")!)
+            newsImageView.image = UIImage(named: "ImageNotFound")
             newsImageView.roundCorners(corners: [.topLeft, .bottomLeft], radius: 8.0)
         }
         newsDateLabel.text = news.publishedAt?.getFormattedDate()

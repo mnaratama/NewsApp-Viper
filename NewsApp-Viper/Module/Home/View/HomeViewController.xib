@@ -30,10 +30,10 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w3A-r0-VPW">
-                    <rect key="frame" x="0.0" y="122" width="390" height="688"/>
+                    <rect key="frame" x="0.0" y="112" width="390" height="698"/>
                     <subviews>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="z7F-8n-7fv">
-                            <rect key="frame" x="0.0" y="0.0" width="390" height="688"/>
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="698"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <connections>
                                 <outlet property="dataSource" destination="w3A-r0-VPW" id="c5O-FW-sgg"/>
@@ -60,10 +60,10 @@
                                     <rect key="frame" x="0.0" y="0.0" width="335" height="61"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tse-pf-20Q">
-                                            <rect key="frame" x="15" y="0.0" width="305" height="61"/>
+                                            <rect key="frame" x="15" y="4" width="305" height="53"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search News" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SSt-42-F86">
-                                                    <rect key="frame" x="50" y="10" width="245" height="41"/>
+                                                    <rect key="frame" x="50" y="10" width="245" height="33"/>
                                                     <color key="textColor" name="Primary Black"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartInsertDeleteType="no"/>
@@ -72,7 +72,7 @@
                                                     </connections>
                                                 </textField>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="LiD-6b-Tex">
-                                                    <rect key="frame" x="15" y="21.666666666666671" width="20" height="18.333333333333336"/>
+                                                    <rect key="frame" x="15" y="17.666666666666671" width="20" height="18.333333333333336"/>
                                                     <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="GZQ-CL-v3E"/>
@@ -94,8 +94,8 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="Tse-pf-20Q" secondAttribute="trailing" constant="15" id="MlN-jZ-9NE"/>
-                                        <constraint firstAttribute="bottom" secondItem="Tse-pf-20Q" secondAttribute="bottom" id="bg8-8Q-0ur"/>
-                                        <constraint firstItem="Tse-pf-20Q" firstAttribute="top" secondItem="20P-ZB-zdV" secondAttribute="top" id="fog-T3-SlL"/>
+                                        <constraint firstAttribute="bottom" secondItem="Tse-pf-20Q" secondAttribute="bottom" constant="4" id="bg8-8Q-0ur"/>
+                                        <constraint firstItem="Tse-pf-20Q" firstAttribute="top" secondItem="20P-ZB-zdV" secondAttribute="top" constant="4" id="fog-T3-SlL"/>
                                         <constraint firstItem="Tse-pf-20Q" firstAttribute="leading" secondItem="20P-ZB-zdV" secondAttribute="leading" constant="15" id="uLC-PG-dSd"/>
                                     </constraints>
                                 </view>
@@ -142,7 +142,7 @@
                 <constraint firstItem="LzG-qz-Yvz" firstAttribute="top" secondItem="RcQ-jV-Tw1" secondAttribute="bottom" id="FMY-br-nLt"/>
                 <constraint firstItem="EeS-Dw-w50" firstAttribute="centerY" secondItem="m2Y-Zg-NcO" secondAttribute="centerY" id="JpV-Jq-vCh"/>
                 <constraint firstItem="LzG-qz-Yvz" firstAttribute="trailing" secondItem="ohX-bM-UgJ" secondAttribute="trailing" id="Siw-9r-R2S"/>
-                <constraint firstItem="w3A-r0-VPW" firstAttribute="top" secondItem="LzG-qz-Yvz" secondAttribute="bottom" constant="10" id="hFF-NU-Zzf"/>
+                <constraint firstItem="w3A-r0-VPW" firstAttribute="top" secondItem="LzG-qz-Yvz" secondAttribute="bottom" id="hFF-NU-Zzf"/>
                 <constraint firstItem="RcQ-jV-Tw1" firstAttribute="leading" secondItem="ohX-bM-UgJ" secondAttribute="leading" id="hm1-Fu-n6e"/>
                 <constraint firstItem="EeS-Dw-w50" firstAttribute="centerX" secondItem="m2Y-Zg-NcO" secondAttribute="centerX" id="hye-rq-278"/>
                 <constraint firstItem="LzG-qz-Yvz" firstAttribute="top" secondItem="ohX-bM-UgJ" secondAttribute="top" constant="4" id="z2G-qO-BTu"/>

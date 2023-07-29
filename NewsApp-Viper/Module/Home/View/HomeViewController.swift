@@ -32,8 +32,7 @@ class HomeViewController: BaseViewController {
     }
     
     private func setupTableView() {
-        newsTableView.register(UINib(nibName: "TopHeadlinesTableViewCell", bundle: nil), forCellReuseIdentifier: "TopHeadlinesTableViewCell")
-        newsTableView.register(UINib(nibName: "FirstTopHeadlinesTableViewCell", bundle: nil), forCellReuseIdentifier: "FirstTopHeadlinesTableViewCell")
+        newsTableView.register(UINib(nibName: "NewsTableViewCell", bundle: nil), forCellReuseIdentifier: "NewsTableViewCell")
         newsTableView.delegate = self
         newsTableView.dataSource = self
     }

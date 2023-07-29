@@ -23,32 +23,32 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kr7-Cx-7CV">
-                        <rect key="frame" x="20" y="10.000000000000007" width="374" height="121.66666666666669"/>
+                        <rect key="frame" x="12" y="8.0000000000000071" width="390" height="121.66666666666669"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0Ax-r6-Afw">
-                                <rect key="frame" x="0.0" y="0.0" width="160" height="121"/>
+                                <rect key="frame" x="0.0" y="0.0" width="120" height="121"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="121" id="hgM-Bd-35r"/>
-                                    <constraint firstAttribute="width" constant="160" id="n1e-Oo-C06"/>
+                                    <constraint firstAttribute="width" constant="120" id="n1e-Oo-C06"/>
                                 </constraints>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ixU-TV-QP7">
-                                <rect key="frame" x="175" y="10" width="189" height="101.66666666666667"/>
+                                <rect key="frame" x="135" y="10" width="245" height="101.66666666666667"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2023-07-29T01:15:00Z" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9b-c0-UXX">
-                                        <rect key="frame" x="0.0" y="0.0" width="189" height="12"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="245" height="12"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                         <color key="textColor" red="0.0" green="0.23921568627450979" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alayna Treene" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IDD-1y-mbo">
-                                        <rect key="frame" x="0.0" y="90" width="189" height="11.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="90" width="245" height="11.666666666666671"/>
                                         <fontDescription key="fontDescription" name="SFProRounded-Regular" family="SF Pro Rounded" pointSize="10"/>
                                         <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The family feels like he got trapped’: How a low-profile Mar-a-Lago" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOs-Z8-rYg">
-                                        <rect key="frame" x="0.0" y="17" width="189" height="68"/>
+                                        <rect key="frame" x="0.0" y="17" width="245" height="68"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="68" id="rpl-fz-NTr"/>
                                         </constraints>
@@ -87,9 +87,9 @@
                 <color key="backgroundColor" red="0.93359775739999995" green="0.93359775739999995" blue="0.93359775739999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="kr7-Cx-7CV" secondAttribute="bottom" constant="4" id="ddb-tu-XD4"/>
-                    <constraint firstItem="kr7-Cx-7CV" firstAttribute="leading" secondItem="oCS-qz-KfB" secondAttribute="leading" constant="20" id="iO6-Od-UM6"/>
-                    <constraint firstItem="kr7-Cx-7CV" firstAttribute="top" secondItem="oCS-qz-KfB" secondAttribute="top" constant="10" id="krA-4G-zOT"/>
-                    <constraint firstAttribute="trailing" secondItem="kr7-Cx-7CV" secondAttribute="trailing" constant="20" id="mSi-uk-ewa"/>
+                    <constraint firstItem="kr7-Cx-7CV" firstAttribute="leading" secondItem="oCS-qz-KfB" secondAttribute="leading" constant="12" id="iO6-Od-UM6"/>
+                    <constraint firstItem="kr7-Cx-7CV" firstAttribute="top" secondItem="oCS-qz-KfB" secondAttribute="top" constant="8" id="krA-4G-zOT"/>
+                    <constraint firstAttribute="trailing" secondItem="kr7-Cx-7CV" secondAttribute="trailing" constant="12" id="mSi-uk-ewa"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="q2I-bm-qEL"/>
