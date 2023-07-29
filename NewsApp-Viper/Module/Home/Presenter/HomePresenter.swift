@@ -14,7 +14,6 @@ class HomePresenter {
     var router: HomeWireFrame?
     
     var topHeadlineArray: [NewsModel] = [NewsModel]()
-    var refreshControl: UIRefreshControl = UIRefreshControl()
     var category: String = CategoryType.general.rawValue
     var categoryList: [CategoryType] = [
         .business,
@@ -25,7 +24,6 @@ class HomePresenter {
         .sports,
         .technology
     ]
-    var selectedCategory: CategoryType?
     var searchText: String = ""
     var pageSize: Int = 100
     
@@ -33,6 +31,24 @@ class HomePresenter {
 }
 
 extension HomePresenter: HomePresentation {
+    var refreshControl: UIRefreshControl {
+        get {
+            <#code#>
+        }
+        set {
+            <#code#>
+        }
+    }
+    
+    var selectedCategory: CategoryType? {
+        get {
+            <#code#>
+        }
+        set {
+            <#code#>
+        }
+    }
+    
     func viewDidLoad() {
         getNews()
     }
@@ -51,9 +67,8 @@ extension HomePresenter: HomePresentation {
         router?.navigateToDetail(data: param)
     }
     
-    func presentCategoryPicker() {
-        let categoryName = categoryList.map { $0.rawValue }
-        router?.presentCategoryPicker(categoryName: categoryName, categoryList: categoryList)
+    func getCategoryCount() -> Int {
+        return categoryList.count
     }
     
     func searchNews(searchText: String) {

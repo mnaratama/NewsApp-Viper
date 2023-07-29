@@ -27,7 +27,6 @@ protocol HomeWireFrame: AnyObject {
     func createModule(data: [String: Any]?) -> BaseViewController
     
     func navigateToDetail(data: [String: Any])
-    func presentCategoryPicker(categoryName: [String], categoryList: [CategoryType])
 }
 
 protocol HomePresentation: AnyObject {
@@ -36,16 +35,13 @@ protocol HomePresentation: AnyObject {
     var router: HomeWireFrame? { get set }
     
     var topHeadlineArray: [NewsModel] { get set }
-    var refreshControl: UIRefreshControl { get set }
     var category: String { get set }
     var categoryList: [CategoryType] { get set }
-    var selectedCategory: CategoryType? { get set }
-    var pageSize: Int { get set }
     
     func viewDidLoad()
     func getNews()
+    func getCategoryCount() -> Int
     func navigateToDetail(data: NewsModel)
-    func presentCategoryPicker()
     func searchNews(searchText: String)
 }
 

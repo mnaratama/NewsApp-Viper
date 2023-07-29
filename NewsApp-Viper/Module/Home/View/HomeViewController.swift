@@ -13,6 +13,8 @@ class HomeViewController: BaseViewController {
     
     @IBOutlet weak var headerView: UIView!
     @IBOutlet weak var categoryButton: UIButton!
+    @IBOutlet weak var categoryCollectionView: UICollectionView!
+    @IBOutlet weak var categoryContainerView: UIView!
     @IBOutlet weak var newsTableView: UITableView!
     @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var searchTextField: UITextField!
@@ -23,10 +25,12 @@ class HomeViewController: BaseViewController {
         presenter?.viewDidLoad()
         setupView()
         setupTableView()
+        setupCollectionView()
     }
     
     private func setupView() {
         headerView.dropShadow()
+        categoryContainerView.isHidden = true
         searchView.roundedCorner(cornerRadius: 10)
         errorSearchNews.isHidden = true
     }
@@ -37,13 +41,20 @@ class HomeViewController: BaseViewController {
         newsTableView.dataSource = self
     }
     
+    private func setupCollectionView() {
+        categoryCollectionView.register(UINib(nibName: "CategoryCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "CategoryCollectionViewCell")
+        categoryCollectionView.delegate = self
+        categoryCollectionView.dataSource = self
+    }
+    
     @IBAction func categoryButtonTapped(_ sender: Any) {
-        presenter?.presentCategoryPicker()
+        categoryContainerView.isHidden = !categoryContainerView.isHidden
     }
     
     @IBAction func searchTextFieldEditingChanged(_ sender: Any) {
         presenter?.searchNews(searchText: searchTextField.text ?? "")
     }
+    
 }
 
 extension HomeViewController: HomeView {
@@ -80,7 +91,6 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = newsTableView.dequeueReusableCell(withIdentifier: "NewsTableViewCell", for: indexPath) as! NewsTableViewCell
         cell.setData(news: news[indexPath.row])
-        
         cell.selectionStyle = .none
         
         return cell
@@ -90,25 +100,25 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         guard let news = presenter?.topHeadlineArray else { return }
         presenter?.navigateToDetail(data: news[indexPath.row])
     }
-    
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == (presenter?.topHeadlineArray.count ?? 0) - 1 {
-            presenter?.getNews()
-            DispatchQueue.main.async {
-                let lastListIndexPath = IndexPath(row: (self.presenter?.topHeadlineArray.count ?? 0) - 1, section: 0)
-                self.newsTableView.scrollToRow(at: lastListIndexPath, at: .bottom, animated: true)
-            }
-        }
-    }
 }
 
-//extension HomeViewController: CategoryPickerPopUpDelegate {
-//    func selectPicker(categoryName: String) {
-//        if let categories = presenter?.categoryList.first(where: { $0.rawValue == categoryName }){
-//            presenter?.selectedCategory = categories
-//            presenter?.category = categoryName.lowercased()
-//            presenter?.getNews()
-//        }
-//    }
-//}
-
+extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return presenter?.getCategoryCount() ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let category = presenter?.categoryList else {
+            return UICollectionViewCell()
+        }
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionViewCell", for: indexPath) as! CategoryCollectionViewCell
+        cell.setupContent(category: category[indexPath.row])
+        cell.callback = { [weak self] selectedCategory in
+            self?.presenter?.category = selectedCategory.lowercased()
+            self?.presenter?.getNews()
+        }
+        
+        return cell
+    }
+}

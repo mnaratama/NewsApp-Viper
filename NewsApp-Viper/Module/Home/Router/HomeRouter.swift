@@ -29,10 +29,6 @@ class HomeRouter: BaseRouter {
 
 extension HomeRouter: HomeWireFrame {
     
-    func presentCategoryPicker(categoryName: [String], categoryList: [CategoryType]) {
-        
-    }
-    
     func navigateToDetail(data: [String : Any]) {
         guard let viewController = viewController else { return }
         let detailView = DetailNewsViewController()
@@ -41,14 +37,4 @@ extension HomeRouter: HomeWireFrame {
         viewController.present(detailView, animated: true)
     }
     
-//    func presentCategoryPicker(categoryName: [String], categoryList: [CategoryType]) {
-//        guard let viewController = viewController else { return }
-//        let vc = CategoryPickerViewController()
-//        vc.delegate = viewController
-//        vc.pickerArray = categoryName
-//        vc.categoryArray = categoryList
-//        vc.modalPresentationStyle = .overFullScreen
-//        viewController.present(vc, animated: false, completion: nil)
-//    }
 }
-
