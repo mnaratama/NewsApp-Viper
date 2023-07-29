@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		231E4DCF2A74B2A800A5FE8F /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DCE2A74B2A800A5FE8F /* BaseRouter.swift */; };
+		231E4DD32A74B37500A5FE8F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DD22A74B37500A5FE8F /* Extension.swift */; };
+		231E4DD72A74B5B100A5FE8F /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DD62A74B5B100A5FE8F /* Router.swift */; };
+		231E4DD92A74B76000A5FE8F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DD82A74B76000A5FE8F /* NetworkManager.swift */; };
+		231E4DDB2A74B84600A5FE8F /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DDA2A74B84600A5FE8F /* ServiceManager.swift */; };
+		231E4DDE2A74BA3E00A5FE8F /* RequestObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DDD2A74BA3E00A5FE8F /* RequestObjectModel.swift */; };
+		231E4DE02A74BA5200A5FE8F /* ResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DDF2A74BA5200A5FE8F /* ResponseModel.swift */; };
+		231E4DE22A74BB6300A5FE8F /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DE12A74BB6300A5FE8F /* HomeEntity.swift */; };
+		231E4DE42A74BC2600A5FE8F /* SourcesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DE32A74BC2600A5FE8F /* SourcesEntity.swift */; };
 		23EA95272A73C28200F1FAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA95262A73C28200F1FAAE /* AppDelegate.swift */; };
 		23EA952B2A73C28200F1FAAE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA952A2A73C28200F1FAAE /* BaseViewController.swift */; };
 		23EA952E2A73C28200F1FAAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EA952C2A73C28200F1FAAE /* Main.storyboard */; };
@@ -41,6 +49,14 @@
 /* Begin PBXFileReference section */
 		03E2F304701276A930D94DC5 /* Pods-NewsApp-Viper-NewsApp-ViperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp-Viper-NewsApp-ViperUITests.debug.xcconfig"; path = "Target Support Files/Pods-NewsApp-Viper-NewsApp-ViperUITests/Pods-NewsApp-Viper-NewsApp-ViperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		231E4DCE2A74B2A800A5FE8F /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		231E4DD22A74B37500A5FE8F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		231E4DD62A74B5B100A5FE8F /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		231E4DD82A74B76000A5FE8F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		231E4DDA2A74B84600A5FE8F /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		231E4DDD2A74BA3E00A5FE8F /* RequestObjectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestObjectModel.swift; sourceTree = "<group>"; };
+		231E4DDF2A74BA5200A5FE8F /* ResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseModel.swift; sourceTree = "<group>"; };
+		231E4DE12A74BB6300A5FE8F /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		231E4DE32A74BC2600A5FE8F /* SourcesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesEntity.swift; sourceTree = "<group>"; };
 		23EA95232A73C28200F1FAAE /* NewsApp-Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NewsApp-Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EA95262A73C28200F1FAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23EA952A2A73C28200F1FAAE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +121,9 @@
 			isa = PBXGroup;
 			children = (
 				231E4DCD2A74B27500A5FE8F /* Base */,
+				231E4DDC2A74B9E700A5FE8F /* Model */,
+				231E4DD52A74B4A700A5FE8F /* Network */,
+				231E4DD02A74B33A00A5FE8F /* Resources */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -116,6 +135,50 @@
 				231E4DCE2A74B2A800A5FE8F /* BaseRouter.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		231E4DD02A74B33A00A5FE8F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				231E4DD12A74B35E00A5FE8F /* Extension */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		231E4DD12A74B35E00A5FE8F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				231E4DD22A74B37500A5FE8F /* Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		231E4DD42A74B45200A5FE8F /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				231E4DE12A74BB6300A5FE8F /* HomeEntity.swift */,
+				231E4DE32A74BC2600A5FE8F /* SourcesEntity.swift */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		231E4DD52A74B4A700A5FE8F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				231E4DD62A74B5B100A5FE8F /* Router.swift */,
+				231E4DD82A74B76000A5FE8F /* NetworkManager.swift */,
+				231E4DDA2A74B84600A5FE8F /* ServiceManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		231E4DDC2A74B9E700A5FE8F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				231E4DDD2A74BA3E00A5FE8F /* RequestObjectModel.swift */,
+				231E4DDF2A74BA5200A5FE8F /* ResponseModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		23EA951A2A73C28200F1FAAE = {
@@ -145,6 +208,7 @@
 			children = (
 				231E4DCB2A74B15B00A5FE8F /* App */,
 				231E4DCC2A74B1BD00A5FE8F /* Core */,
+				231E4DD42A74B45200A5FE8F /* Module */,
 				23EA952C2A73C28200F1FAAE /* Main.storyboard */,
 				23EA95342A73C28500F1FAAE /* Info.plist */,
 			);
@@ -430,9 +494,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				231E4DD92A74B76000A5FE8F /* NetworkManager.swift in Sources */,
+				231E4DE02A74BA5200A5FE8F /* ResponseModel.swift in Sources */,
 				23EA952B2A73C28200F1FAAE /* BaseViewController.swift in Sources */,
+				231E4DE42A74BC2600A5FE8F /* SourcesEntity.swift in Sources */,
+				231E4DE22A74BB6300A5FE8F /* HomeEntity.swift in Sources */,
 				231E4DCF2A74B2A800A5FE8F /* BaseRouter.swift in Sources */,
+				231E4DD72A74B5B100A5FE8F /* Router.swift in Sources */,
+				231E4DDE2A74BA3E00A5FE8F /* RequestObjectModel.swift in Sources */,
 				23EA95272A73C28200F1FAAE /* AppDelegate.swift in Sources */,
+				231E4DDB2A74B84600A5FE8F /* ServiceManager.swift in Sources */,
+				231E4DD32A74B37500A5FE8F /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
