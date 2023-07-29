@@ -28,21 +28,18 @@ class HomeRouter: BaseRouter {
 }
 
 extension HomeRouter: HomeWireFrame {
-    func navigateToDetail(data: [String : Any]) {
-        
-    }
     
     func presentCategoryPicker(categoryName: [String], categoryList: [CategoryType]) {
         
     }
     
-//    func navigateToDetail(data: [String : Any]) {
-//        guard let viewController = viewController else { return }
-//        let detailView = DetailNewsViewController()
-//        detailView.data = data
-//        detailView.modalPresentationStyle = .fullScreen
-//        viewController.present(detailView, animated: true)
-//    }
+    func navigateToDetail(data: [String : Any]) {
+        guard let viewController = viewController else { return }
+        let detailView = DetailNewsViewController()
+        detailView.data = data
+        detailView.modalPresentationStyle = .fullScreen
+        viewController.present(detailView, animated: true)
+    }
     
 //    func presentCategoryPicker(categoryName: [String], categoryList: [CategoryType]) {
 //        guard let viewController = viewController else { return }
