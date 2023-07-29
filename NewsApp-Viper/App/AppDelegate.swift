@@ -19,10 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.backgroundColor = UIColor.white
-        window?.rootViewController = BaseViewController()
         window?.makeKeyAndVisible()
         
-//        handleFirstScreen()
+        handleFirstScreen()
         
         IQKeyboardManager.shared.enable = true
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
@@ -30,21 +29,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
 
-//    func handleFirstScreen() {
-//        let home = HomeRouter.init().createModule()
-//        let navigationController = UINavigationController(rootViewController: home)
-//
-//        navigationController.isNavigationBarHidden = true
-//        navigationController.navigationBar.shadowImage = nil
-//        navigationController.navigationBar.isTranslucent = true
-//
-//        appNavigationController = navigationController
-//
-//        self.window?.rootViewController = appNavigationController
-//        self.window?.backgroundColor = UIColor.init(red: 0.87, green: 0.87, blue: 0.87, alpha: 1)
-//        
-//        tabBarController()
-//    }
+    func handleFirstScreen() {
+        let home = HomeRouter.init().createModule()
+        let navigationController = UINavigationController(rootViewController: home)
+
+        navigationController.isNavigationBarHidden = true
+        navigationController.navigationBar.shadowImage = nil
+        navigationController.navigationBar.isTranslucent = true
+
+        appNavigationController = navigationController
+
+        self.window?.rootViewController = appNavigationController
+        self.window?.backgroundColor = UIColor.init(red: 0.87, green: 0.87, blue: 0.87, alpha: 1)
+        
+        tabBarController()
+    }
     
     func tabBarController(){
         appTabBarController = TabBarViewController()

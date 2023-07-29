@@ -10,7 +10,7 @@ import UIKit
 class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     let homeTab: HomeViewController = HomeRouter().createModule(data: nil) as! HomeViewController
-//    let sourcesTab: SourcesViewController = SourceRouter().createModule(data: nil) as! SourcesViewController
+    let sourcesTab: SourcesViewController = SourceRouter().createModule(data: nil) as! SourcesViewController
     
     var homeNavigationViewController : UINavigationController!
     var sourcesNavigationViewController : UINavigationController!
@@ -31,10 +31,10 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         homeNavigationViewController.isNavigationBarHidden = true
     
         //Sources
-//        sourcesNavigationViewController = UINavigationController(rootViewController : sourcesTab)
-//        sourcesNavigationViewController.isNavigationBarHidden = true
+        sourcesNavigationViewController = UINavigationController(rootViewController : sourcesTab)
+        sourcesNavigationViewController.isNavigationBarHidden = true
         
-        viewControllers = [homeNavigationViewController, homeNavigationViewController]
+        viewControllers = [homeNavigationViewController, sourcesNavigationViewController]
         
         let attributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font):UIFont.systemFont(ofSize: 10)]
         
@@ -58,8 +58,7 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         self.tabBar.items?[1].imageInsets = UIEdgeInsets.init(top: -3, left: 0, bottom: 3, right: 0);
         
         homeNavigationViewController.tabBarItem =  tabBar.items?[0]
-//        sourcesNavigationViewController.tabBarItem = tabBar.items?[1]
-        homeNavigationViewController.tabBarItem = tabBar.items?[1]
+        sourcesNavigationViewController.tabBarItem = tabBar.items?[1]
         
         selectedViewController = homeNavigationViewController
         selectedIndex = 0
@@ -86,7 +85,7 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
     func setTitle() {
         tabBar.items?[0].title = "Home"
-        tabBar.items?[1].title = "News"
+        tabBar.items?[1].title = "Sources"
     }
     
     override func didReceiveMemoryWarning() {
