@@ -17,6 +17,14 @@
 		231E4DE22A74BB6300A5FE8F /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DE12A74BB6300A5FE8F /* HomeEntity.swift */; };
 		231E4DE42A74BC2600A5FE8F /* SourcesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231E4DE32A74BC2600A5FE8F /* SourcesEntity.swift */; };
 		239C42452A74C6A100BAEE24 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C42442A74C6A100BAEE24 /* TabBarViewController.swift */; };
+		239C42552A74F07800BAEE24 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C42542A74F07800BAEE24 /* HomeViewController.swift */; };
+		239C42572A74F08000BAEE24 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239C42562A74F08000BAEE24 /* HomeViewController.xib */; };
+		239C42592A74F40F00BAEE24 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C42582A74F40F00BAEE24 /* HomePresenter.swift */; };
+		239C425B2A74F46400BAEE24 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C425A2A74F46400BAEE24 /* HomeInteractor.swift */; };
+		239C425D2A74F5DD00BAEE24 /* HomeContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C425C2A74F5DD00BAEE24 /* HomeContract.swift */; };
+		239C425F2A74F61600BAEE24 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C425E2A74F61600BAEE24 /* HomeRouter.swift */; };
+		239C42642A74F7E500BAEE24 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 239C42632A74F7E500BAEE24 /* NewsTableViewCell.swift */; };
+		239C42662A74F7F100BAEE24 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 239C42652A74F7F100BAEE24 /* NewsTableViewCell.xib */; };
 		23EA95272A73C28200F1FAAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA95262A73C28200F1FAAE /* AppDelegate.swift */; };
 		23EA952B2A73C28200F1FAAE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23EA952A2A73C28200F1FAAE /* BaseViewController.swift */; };
 		23EA952E2A73C28200F1FAAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23EA952C2A73C28200F1FAAE /* Main.storyboard */; };
@@ -59,6 +67,14 @@
 		231E4DE12A74BB6300A5FE8F /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
 		231E4DE32A74BC2600A5FE8F /* SourcesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourcesEntity.swift; sourceTree = "<group>"; };
 		239C42442A74C6A100BAEE24 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		239C42542A74F07800BAEE24 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		239C42562A74F08000BAEE24 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		239C42582A74F40F00BAEE24 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		239C425A2A74F46400BAEE24 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		239C425C2A74F5DD00BAEE24 /* HomeContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeContract.swift; sourceTree = "<group>"; };
+		239C425E2A74F61600BAEE24 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		239C42632A74F7E500BAEE24 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		239C42652A74F7F100BAEE24 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
 		23EA95232A73C28200F1FAAE /* NewsApp-Viper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NewsApp-Viper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23EA95262A73C28200F1FAAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23EA952A2A73C28200F1FAAE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -158,8 +174,8 @@
 		231E4DD42A74B45200A5FE8F /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				231E4DE12A74BB6300A5FE8F /* HomeEntity.swift */,
-				231E4DE32A74BC2600A5FE8F /* SourcesEntity.swift */,
+				239C42462A74ECC600BAEE24 /* Home */,
+				239C42472A74ECD000BAEE24 /* Source */,
 				239C42442A74C6A100BAEE24 /* TabBarViewController.swift */,
 			);
 			path = Module;
@@ -182,6 +198,134 @@
 				231E4DDF2A74BA5200A5FE8F /* ResponseModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		239C42462A74ECC600BAEE24 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				239C424B2A74ED5000BAEE24 /* Entity */,
+				239C42492A74ED4000BAEE24 /* Interactor */,
+				239C424A2A74ED4700BAEE24 /* Presenter */,
+				239C42522A74EFE600BAEE24 /* Protocol */,
+				239C424C2A74ED5800BAEE24 /* Router */,
+				239C42482A74ED3700BAEE24 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		239C42472A74ECD000BAEE24 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				239C424D2A74EDA600BAEE24 /* Entity */,
+				239C424E2A74EDAE00BAEE24 /* Interactor */,
+				239C424F2A74EDB600BAEE24 /* Presenter */,
+				239C42532A74EFF100BAEE24 /* Protocol */,
+				239C42502A74EDBF00BAEE24 /* Router */,
+				239C42512A74EDC800BAEE24 /* View */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		239C42482A74ED3700BAEE24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				239C42602A74F7B100BAEE24 /* Cell */,
+				239C42542A74F07800BAEE24 /* HomeViewController.swift */,
+				239C42562A74F08000BAEE24 /* HomeViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		239C42492A74ED4000BAEE24 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				239C425A2A74F46400BAEE24 /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		239C424A2A74ED4700BAEE24 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				239C42582A74F40F00BAEE24 /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		239C424B2A74ED5000BAEE24 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				231E4DE12A74BB6300A5FE8F /* HomeEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		239C424C2A74ED5800BAEE24 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				239C425E2A74F61600BAEE24 /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		239C424D2A74EDA600BAEE24 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				231E4DE32A74BC2600A5FE8F /* SourcesEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		239C424E2A74EDAE00BAEE24 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		239C424F2A74EDB600BAEE24 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		239C42502A74EDBF00BAEE24 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		239C42512A74EDC800BAEE24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		239C42522A74EFE600BAEE24 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				239C425C2A74F5DD00BAEE24 /* HomeContract.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		239C42532A74EFF100BAEE24 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		239C42602A74F7B100BAEE24 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				239C42632A74F7E500BAEE24 /* NewsTableViewCell.swift */,
+				239C42652A74F7F100BAEE24 /* NewsTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		23EA951A2A73C28200F1FAAE = {
@@ -370,6 +514,8 @@
 				23EA95332A73C28500F1FAAE /* LaunchScreen.storyboard in Resources */,
 				23EA95302A73C28500F1FAAE /* Assets.xcassets in Resources */,
 				23EA952E2A73C28200F1FAAE /* Main.storyboard in Resources */,
+				239C42572A74F08000BAEE24 /* HomeViewController.xib in Resources */,
+				239C42662A74F7F100BAEE24 /* NewsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,14 +646,20 @@
 				231E4DD92A74B76000A5FE8F /* NetworkManager.swift in Sources */,
 				231E4DE02A74BA5200A5FE8F /* ResponseModel.swift in Sources */,
 				23EA952B2A73C28200F1FAAE /* BaseViewController.swift in Sources */,
+				239C425B2A74F46400BAEE24 /* HomeInteractor.swift in Sources */,
+				239C425D2A74F5DD00BAEE24 /* HomeContract.swift in Sources */,
 				231E4DE42A74BC2600A5FE8F /* SourcesEntity.swift in Sources */,
 				239C42452A74C6A100BAEE24 /* TabBarViewController.swift in Sources */,
 				231E4DE22A74BB6300A5FE8F /* HomeEntity.swift in Sources */,
+				239C42642A74F7E500BAEE24 /* NewsTableViewCell.swift in Sources */,
+				239C425F2A74F61600BAEE24 /* HomeRouter.swift in Sources */,
 				231E4DCF2A74B2A800A5FE8F /* BaseRouter.swift in Sources */,
+				239C42592A74F40F00BAEE24 /* HomePresenter.swift in Sources */,
 				231E4DD72A74B5B100A5FE8F /* Router.swift in Sources */,
 				231E4DDE2A74BA3E00A5FE8F /* RequestObjectModel.swift in Sources */,
 				23EA95272A73C28200F1FAAE /* AppDelegate.swift in Sources */,
 				231E4DDB2A74B84600A5FE8F /* ServiceManager.swift in Sources */,
+				239C42552A74F07800BAEE24 /* HomeViewController.swift in Sources */,
 				231E4DD32A74B37500A5FE8F /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

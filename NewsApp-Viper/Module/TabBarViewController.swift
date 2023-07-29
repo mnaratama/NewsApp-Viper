@@ -9,7 +9,7 @@ import UIKit
 
 class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
     
-//    let homeTab: HomeViewController = HomeRouter().createModule(data: nil) as! HomeViewController
+    let homeTab: HomeViewController = HomeRouter().createModule(data: nil) as! HomeViewController
 //    let sourcesTab: SourcesViewController = SourceRouter().createModule(data: nil) as! SourcesViewController
     
     var homeNavigationViewController : UINavigationController!
@@ -27,14 +27,14 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         UITabBar.appearance().backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
 
         //Home
-//        homeNavigationViewController = UINavigationController(rootViewController : homeTab)
+        homeNavigationViewController = UINavigationController(rootViewController : homeTab)
         homeNavigationViewController.isNavigationBarHidden = true
     
         //Sources
 //        sourcesNavigationViewController = UINavigationController(rootViewController : sourcesTab)
-        sourcesNavigationViewController.isNavigationBarHidden = true
+//        sourcesNavigationViewController.isNavigationBarHidden = true
         
-        viewControllers = [homeNavigationViewController, sourcesNavigationViewController]
+        viewControllers = [homeNavigationViewController, homeNavigationViewController]
         
         let attributes = [convertFromNSAttributedStringKey(NSAttributedString.Key.font):UIFont.systemFont(ofSize: 10)]
         
@@ -58,7 +58,8 @@ class TabBarViewController: UITabBarController, UITabBarControllerDelegate {
         self.tabBar.items?[1].imageInsets = UIEdgeInsets.init(top: -3, left: 0, bottom: 3, right: 0);
         
         homeNavigationViewController.tabBarItem =  tabBar.items?[0]
-        sourcesNavigationViewController.tabBarItem = tabBar.items?[1]
+//        sourcesNavigationViewController.tabBarItem = tabBar.items?[1]
+        homeNavigationViewController.tabBarItem = tabBar.items?[1]
         
         selectedViewController = homeNavigationViewController
         selectedIndex = 0
