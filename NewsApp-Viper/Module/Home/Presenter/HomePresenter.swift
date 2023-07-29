@@ -31,23 +31,6 @@ class HomePresenter {
 }
 
 extension HomePresenter: HomePresentation {
-    var refreshControl: UIRefreshControl {
-        get {
-            <#code#>
-        }
-        set {
-            <#code#>
-        }
-    }
-    
-    var selectedCategory: CategoryType? {
-        get {
-            <#code#>
-        }
-        set {
-            <#code#>
-        }
-    }
     
     func viewDidLoad() {
         getNews()
