@@ -3,7 +3,7 @@ The NewsApp is a feature-rich iOS application designed to keep users updated wit
 
 # Features
 
-* **DailyFeed iOS App**: Stay informed with the DailyFeed app, available for iOS 13 and above.
+* **NewsApp iOS App**: Stay informed with the NewsApp app, available for iOS 13 and above.
 
 * **News Sources**: Explore a wide range of news sources conveniently within the app.
 
@@ -21,8 +21,12 @@ To get started with the NewsApp, follow these steps:
 
 4. **Install Dependencies**: Run `pod install` to install the required dependencies for the project.
 
-5. **Open Xcode Workspace**: Locate the `NewsApp.xcworkspace` file in the NewsApp folder and open it with Xcode.
+5. **Open Xcode Workspace**: Locate the `NewsApp-Viper.xcworkspace` file in the NewsApp folder and open it with Xcode.
 
 6. **Run the App**: Press `CTRL + R` or use Xcode's "Run" feature to build and run the NewsApp on your simulator or connected device.
 
 Stay informed and enjoy the seamless experience of exploring news articles from various sources with the NewsApp!
+
+# Screenshoot
+[![Simulator-Screen-Shot-i-Phone-14-2023-07-30-at-17-21-36.png](https://i.postimg.cc/433b7r39/Simulator-Screen-Shot-i-Phone-14-2023-07-30-at-17-21-36.png)](https://postimg.cc/WdQJxYgN)                 
+[![Simulator-Screen-Shot-i-Phone-14-2023-07-30-at-17-21-41.png](https://i.postimg.cc/VNH9jDSH/Simulator-Screen-Shot-i-Phone-14-2023-07-30-at-17-21-41.png)](https://postimg.cc/06DJvG0p)
