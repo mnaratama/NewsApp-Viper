@@ -57,6 +57,17 @@ class SourcesViewController: BaseViewController {
 }
 
 extension SourcesViewController: SourcesView {
+    func setAccessibilityIdentifiers() {
+        searchTextField.accessibilityIdentifier = "homeSearchTextField"
+        categoryCollectionView.accessibilityIdentifier = "homeCategoryCollectionView"
+        categoryButton.accessibilityIdentifier = "homeCategoryButton"
+        sourceTableView.accessibilityIdentifier = "homeNewsTableView"
+        headerView.accessibilityIdentifier = "homeHeaderView"
+        categoryContainerView.accessibilityIdentifier = "homeCategoryContainerView"
+        searchView.accessibilityIdentifier = "homeSearchView"
+        errorLabel.accessibilityIdentifier = "homeErrorSearchNews"
+    }
+    
     func reloadData() {
         sourceTableView.reloadData()
     }

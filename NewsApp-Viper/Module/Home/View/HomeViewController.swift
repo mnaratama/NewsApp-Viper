@@ -58,6 +58,17 @@ class HomeViewController: BaseViewController {
 }
 
 extension HomeViewController: HomeView {
+    func setAccessibilityIdentifiers() {
+        searchTextField.accessibilityIdentifier = "homeSearchTextField"
+        categoryCollectionView.accessibilityIdentifier = "homeCategoryCollectionView"
+        categoryButton.accessibilityIdentifier = "homeCategoryButton"
+        newsTableView.accessibilityIdentifier = "homeNewsTableView"
+        headerView.accessibilityIdentifier = "homeHeaderView"
+        categoryContainerView.accessibilityIdentifier = "homeCategoryContainerView"
+        searchView.accessibilityIdentifier = "homeSearchView"
+        errorSearchNews.accessibilityIdentifier = "homeErrorSearchNews"
+    }
+    
     func showAlert(message: String) {
         DispatchQueue.main.async {
             self.showAlertView(message: message)

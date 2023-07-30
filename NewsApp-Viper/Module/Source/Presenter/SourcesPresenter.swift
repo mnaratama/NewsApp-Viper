@@ -40,6 +40,7 @@ extension SourcePresenter: SourcesPresentation {
         var param: [String: Any] = [String: Any]()
         param["category"] = category
         view?.showLoading()
+        view?.setAccessibilityIdentifiers()
         interactor?.getSourceNews(param: param)
     }
     

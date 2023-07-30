@@ -15,6 +15,7 @@ protocol HomeView: AnyObject {
     func hideLoading()
     func reloadTableView()
     func showAlert(message: String)
+    func setAccessibilityIdentifiers()
 }
 
 protocol HomeUseCase: AnyObject {

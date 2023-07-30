@@ -15,6 +15,7 @@ protocol SourcesView: AnyObject {
     func hideLoading()
     func showErrorSearch(isHidden: Bool)
     func showAlert(message: String)
+    func setAccessibilityIdentifiers()
 }
 
 protocol SourcesUseCase: AnyObject {

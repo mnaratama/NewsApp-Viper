@@ -41,6 +41,7 @@ extension HomePresenter: HomePresentation {
         param["category"] = category
         param["pageSize"] = pageSize
         view?.showLoading()
+        view?.setAccessibilityIdentifiers()
         interactor?.getNews(param: param)
     }
     
